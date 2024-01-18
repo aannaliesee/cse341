@@ -1,1 +1,7 @@
-GET http://localhost::3000 
+GET http://localhost::3000 HTTP/1.1
+
+GET http://localhost::3000/anna HTTP/1.1
+
+GET http://localhost:3000/contacts
+
+GET http://localhost:3000/contacts/your_contact_id_here
