@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-const contactsRoute = require('./contacts');
+const contactsRoute = require('./routes/contacts');
 app.use('/contacts', contactsRoute);
 
 app.use('/', require('./routes'));
