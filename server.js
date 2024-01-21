@@ -5,6 +5,9 @@ const mongodb = require('./db/connect');
 const app = express();
 const port = process.env.PORT || 3000;
 
+const contactsRoute = require('./routes/contacts');
+app.use('/contacts', contactsRoute);
+
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
