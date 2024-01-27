@@ -1,30 +1,30 @@
+[{
+  "_id": {
+    "$oid": "65b19d4ae52e8f4804c35b72"
+  },
+  "firstName": "Steven",
+  "lastName": "Mits",
+  "email": "mits@arkade.us",
+  "favoriteColor": "blue",
+  "birthday": "02/27/1992"
+},
 {
-    "contact": {
-      "firstName": "Annaliese",
-      "lastName": "Mits",
-      "email": "annaliese.mits@gmail.com",
-      "favoriteColor": "green",
-      "birthday": "04/28/1994"
-    },
-    "contact2": {
-      "firstName": "Steven",
-      "lastName": "Mits",
-      "email": "dj.steve.mits@gmail.com",
-      "favoriteColor": "blue",
-      "birthday": "02/27/1992"
-    },
-    "contact3": {
-      "firstName": "Roxy",
-      "lastName": "Mits",
-      "email": "roxanna.mits@gmail.com",
-      "favoriteColor": "rainbow",
-      "birthday": "07/13/2016"
-    },
-    "contact4": {
-      "firstName": "Julie",
-      "lastName": "Kirkham",
-      "email": "jkirkham1@cox.net",
-      "favoriteColor": "green",
-      "birthday": "08/31/1969"
-    }
-  }
+  "_id": {
+    "$oid": "65b1fb46e52e8f4804c35b73"
+  },
+  "firstName": "Annaliese",
+  "lastName": "Mits",
+  "email": "annaliese.mits@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "04/28/1994"
+},
+{
+  "_id": {
+    "$oid": "65b1fbcfe52e8f4804c35b75"
+  },
+  "firstName": "Roxy",
+  "lastName": "Mits",
+  "email": "roxanna@gmail.com",
+  "favoriteColor": "rainbow",
+  "birthday": "07/13/2016"
+}]
