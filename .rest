@@ -4,22 +4,22 @@ GET http://localhost::3000 HTTP/1.1
 ### a certain contact
 GET http://localhost::3000/anna HTTP/1.1
 
-### Get all Contacts
+### Get all Contacts GetAll
 GET http://localhost:3000/contacts
 
-###Get contact by ID
+###Get contact by ID GetSingle
 GET http://localhost:3000/contacts/65b1fbcfe52e8f4804c35b75
 
 ###RENDER
 GET https://cse341-hm28.onrender.com
 
-###RENDER contacts database -- can't get database to show up
-GET https://cse341-hm28.onrender.com/Lesson2
+###RENDER contacts database -- can't get database to show up, still works on local though
+GET https://cse341-hm28.onrender.com/contacts
 
 ##LESSON 3
 
 ###Create a new contact
-POST http://localhost::3000/Lesson2 HTTP/1.1
+POST http://localhost::3000/contacts
 Content-Type: application/json
 
 {
@@ -31,12 +31,16 @@ Content-Type: application/json
 }
 
 ###Update a contact
-PUT http://your-api-url/api/contacts/contact-id-to-modify HTTP/1.1
+PUT http://localhost::3000/contacts/65b1fbcfe52e8f4804c35b75 HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "Updated Name"
+  "firstName": "Roxy",
+  "lastName": "Mits",
+  "email": "test@gmail.com",
+  "favoriteColor": "rainbow",
+  "birthday": "07/13/2016"
 }
 
-###Delete a contact
-DELETE http://your-api-url/api/contacts/contact-id-to-delete
+###Delete a contact -- ROxy ID
+DELETE http://localhost::3000/contacts/65b1fbcfe52e8f4804c35b75
