@@ -5,8 +5,9 @@ const mongodb = require('./db/connect');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const contactsRoute = require('./routes/contacts');
+contactsRoute = require('./routes/contacts');
 app.use('/contacts', contactsRoute);
+
 
 app
   .use(bodyParser.json())
@@ -16,9 +17,6 @@ app
   })
   .use('/', require('./routes'));
 
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
-});
 
 mongodb.initDb((err, mongodb) => {
   if (err) {

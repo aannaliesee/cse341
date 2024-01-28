@@ -26,7 +26,10 @@ const getSingle = async (req, res, next) => {
 
 //LESSON 3
 
+
 const createContact = async (req, res) => {
+  //added to see payload
+  console.log('Request Body:', req);
   try {
     const contact = {
       firstName: req.body.firstName,

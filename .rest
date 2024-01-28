@@ -1,8 +1,8 @@
 ### lesson 1 local host
-GET http://localhost::3000 HTTP/1.1
+GET http://localhost:3000 HTTP/1.1
 
 ### a certain contact
-GET http://localhost::3000/anna HTTP/1.1
+GET http://localhost:3000/anna HTTP/1.1
 
 ### Get all Contacts GetAll
 GET http://localhost:3000/contacts
@@ -19,7 +19,7 @@ GET https://cse341-hm28.onrender.com/contacts
 ##LESSON 3
 
 ###Create a new contact
-POST http://localhost::3000/contacts
+POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ###Update a contact
-PUT http://localhost::3000/contacts/65b1fbcfe52e8f4804c35b75 HTTP/1.1
+PUT http://localhost:3000/contacts/65b1fbcfe52e8f4804c35b75 HTTP/1.1
 Content-Type: application/json
 
 {
