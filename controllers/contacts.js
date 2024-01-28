@@ -27,6 +27,7 @@ const getSingle = async (req, res, next) => {
 //LESSON 3
 
 
+/*
 const createContact = async (req, res) => {
   //added to see payload
   console.log('Request Body:', req);
@@ -51,8 +52,9 @@ const createContact = async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
+*/
 
-/*const createContact = async (req, res) => {
+const createContact = async (req, res) => {
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -67,7 +69,6 @@ const createContact = async (req, res) => {
     res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   } 
 };
-*/
 
 
 const updateContact = async (req, res) => {

@@ -17,6 +17,9 @@ app
   })
   .use('/', require('./routes'));
 
+  app.listen(port, () => {
+    console.log('Server running on port 3000');
+  });
 
 mongodb.initDb((err, mongodb) => {
   if (err) {
