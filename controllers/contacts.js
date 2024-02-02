@@ -85,8 +85,8 @@ const updateContact = async (req, res) => {
     .getDb()
     .db('Lesson2')
     .collection('contacts')
-    //changed to updateOne and $set: contact
-    .updateOne({ _id: userId }, { $set: contact });
+    //changed to replaceOne from updateOne and $set: contact
+    .replaceOne({ _id: userId }, { $set: contact });
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
