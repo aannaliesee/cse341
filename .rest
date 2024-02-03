@@ -23,11 +23,11 @@ POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
-  "firstName": "Jordan",
-  "lastName": "Kirkham",
-  "email": "jordan@gmail.com",
+  "firstName": "Mickey",
+  "lastName": "Mouse",
+  "email": "mouse@gmail.com",
   "favoriteColor": "red",
-  "birthday": "10/27/1992"
+  "birthday": "10/07/1992"
 }
 
 ###Update a contact
