@@ -31,16 +31,16 @@ Content-Type: application/json
 }
 
 ###Update a contact
-PUT http://localhost:3000/contacts/65b1fbcfe52e8f4804c35b75 HTTP/1.1
+PUT http://localhost:3000/contacts/65b5bc1d894f77f29e712c50 HTTP/1.1
 Content-Type: application/json
 
 {
   "firstName": "Roxy",
   "lastName": "Mits",
-  "email": "test@gmail.com",
+  "email": "new@gmail.com",
   "favoriteColor": "rainbow",
   "birthday": "07/13/2016"
 }
 
 ###Delete a contact -- ROxy ID
-DELETE http://localhost::3000/contacts/65b1fbcfe52e8f4804c35b75
+DELETE http://localhost:3000/contacts/65b5bc1d894f77f29e712c4f
