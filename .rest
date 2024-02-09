@@ -4,9 +4,6 @@ GET http://localhost:3000 HTTP/1.1
 ### a certain contact
 GET http://localhost:3000/anna HTTP/1.1
 
-### Get all Contacts GetAll
-GET http://localhost:3000/contacts
-
 ###Get contact by ID GetSingle
 GET http://localhost:3000/contacts/65b5bc1d894f77f29e712c50
 
@@ -18,29 +15,32 @@ GET https://cse341-hm28.onrender.com/contacts
 
 ##LESSON 3
 
+### Get all Contacts GetAll
+GET http://localhost:3000/contacts
+
 ###Create a new contact
 POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
-  "firstName": "Mickey",
+  "firstName": "Minnie",
   "lastName": "Mouse",
-  "email": "mouse@gmail.com",
+  "email": "minnie@gmail.com",
   "favoriteColor": "red",
-  "birthday": "10/07/1992"
+  "birthday": "10/07/2000"
 }
 
 ###Update a contact
-PUT http://localhost:3000/contacts/65b5bc1d894f77f29e712c50 HTTP/1.1
+PUT http://localhost:3000/contacts/65beccf2957c3e31c42bc8ef HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName": "Roxy",
-  "lastName": "Mits",
-  "email": "new@gmail.com",
+  "firstName": "Minnie",
+  "lastName": "Mouse",
+  "email": "mousey@gmail.com",
   "favoriteColor": "rainbow",
-  "birthday": "07/13/2016"
+  "birthday": "10/07/2000"
 }
 
 ###Delete a contact -- ROxy ID
-DELETE http://localhost:3000/contacts/65b5bc1d894f77f29e712c4f
+DELETE http://localhost:3000/contacts/65beccf2957c3e31c42bc8ef
